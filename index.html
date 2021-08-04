@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPS Patna</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        body {
+            background: url(background.png);
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 90px;
+            padding-bottom: 10px;
+            transition: all 0.5s linear;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 800px;
+            height: 420px;
+        }
+
+        .swiper-slide .number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+            text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5),
+                -5px px 4px rgba(255, 255, 255, 0.5);
+            font-size: 100px;
+            font-weight: 900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <a href="#" class="logo"><img src="DPS.jpg"></a>
+
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <!-- site logo	//-->
+                        <a href="index.php">
+                            <div class="site-logo site-logo-3"></div>
+                        </a>
+                    </div>
+                    <div class="span8">
+                        <div class="ss">
+                            <a href="https://itunes.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1&mt=8" target="_blank"><img src="apple.png"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.edunext.dpspatna" target="_blank"><img src="android.png"></a>
+                        </div>
+                        <!-- header contacts //-->
+                        <div class="a">
+                            <p><span class="contact-1"><i class="fa fa-mobile" aria-hidden="true"></i> </span><strong>+91 9973811118 / +91 9973311118</strong></p>
+
+                        </div><br>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="#home">home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#">Campus life</a>
+            <a href="#">Achievements</a>
+            <a href="#">What’s New</a>
+            <a href="#">Alumni</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home background" id="home">
+
+        <div class="content">
+            <h1>welcome to DPS Patna</h1>
+            <h3>making education more fun.</h3>
+            <p id="dd">Takshila Educational Society laid the foundation of veritable learning in Patna by establishing Delhi Public School in the year 1998 in a collaborative effort with the Delhi Public Schools Society, which is one of the largest chains of CBSE schools in India. DPS Patna is affiliated to CBSE, New Delhi and offers schooling from Nursery to Class XII.</p>
+            <button id="d" ondblclick="bt()" onclick="btn()" href="" class="btn">learn more</button>
+        </div>
+
+        <div class="image">
+            <img src="home-img.png" alt="">
+        </div>
+
+    </section>
+
+    <section id="gallery">
+        <style>
+            .blue-color {
+                color: blue;
+            }
+
+            .green-color {
+                color: green;
+            }
+
+            .teal-color {
+                color: teal;
+            }
+
+            .yellow-color {
+                color: yellow;
+            }
+
+            .red-color {
+                color: red;
+            }
+        </style>
+
+        <h1 class="sh">Gallery</h1>
+
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(1.jpg);">
+                    <div class="number">01</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(2.jpg);">
+                    <div class="number">02</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(3.jpg);">
+                    <div class="number">03</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(4.jpg);">
+                    <div class="number">04</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(5.jpg);">
+                    <div class="number">05</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(6.jpg);">
+                    <div class="number">06</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(7.jpg);">
+                    <div class="number">07</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(8.jpg);">
+                    <div class="number">08</div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(9.jpg);">
+                    <div class="number">09</div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                loop: true,
+            });
+        </script>
+
+        <br>
+
+        <marquee behavior="alternate" scrollamount="15" onmouseover="this.stop()" onmouseout="this.start()">
+            Welcome to DPS Patna
+        </marquee>
+
+    </section>
+
+    <section class="contact background" id="contact">
+        <div class="row">
+
+            <div class="contact-info">
+
+                <div class="box">
+                    <h3 class="title">contact details</h3>
+                    <p> <i class="fas fa-map-marker-alt"></i>Vill. Chandmari, P.S. Shahpur, Danapur Cantonment, Patna - 801 502</p>
+                    <p> <i class="fas fa-envelope"></i> info@dpspatna.com </p>
+                    <p> <i class="fas fa-phone"></i> +91 9973811118 / +91 9973311118 </p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title">follow us</h3>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+
+                <div class="box">
+                    <h3 class="title">newsletter</h3>
+                    <form action="">
+                        <input type="email" placeholder="Enter your email">
+                        <input type="submit" class="btn" value="Send">
+                    </form>
+                </div>
+
+            </div>
+
+            <form action="" class="contact-form">
+
+                <h3>contact us</h3>
+
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Number" class="box">
+                <textarea placeholder="Message" class="box message" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="btn" value="send message">
+
+            </form>
+
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.253222201865!2d85.01482331482393!3d25.629719983696894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed542c13163053%3A0xb0fb979bdb251e33!2sDelhi%20Public%20School%20Patna!5e0!3m2!1sen!2sin!4v1627835066817!5m2!1sen!2sin" width="400" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section  -->
+
+    <div class="footer">
+        created by <span> Abhinav Anand </span>
+    </div>
+
+
+
+
+
+
+</body></html>
